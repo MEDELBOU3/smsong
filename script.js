@@ -1,47 +1,10 @@
-       function scrollToTop() {
+        //scrolling function
+        function scrollToTop() {
           window.scrollTo({
             top: 0,
             behavior: 'smooth' // لتنعيم التمرير
           });
         }
-
-            function getQueryParams() {
-                const params = {};
-                let e, r = /([^&;=]+)=?([^&;]*)/g,
-                    q = window.location.search.substring(1);
-                while (e = r.exec(q)) {
-                    params[e[1]] = decodeURIComponent(e[2]);
-                }
-                return params;
-            }
-    
-            const params = getQueryParams();
-    
-            if (params.access_token) {
-                fetch('https://api.spotify.com/v1/me', {
-                    headers: {
-                        'Authorization': `Bearer ${params.access_token}`
-                    }
-                })
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('user-info').innerText = `Logged in as ${data.display_name}`;
-                    // يمكنك الآن استخدام التوكن للوصول إلى Spotify API
-                });
-            } else {
-                document.getElementById('user-info').innerText = 'Error: No access token found';
-            }
-    
-
-        const burger = document.querySelector('.burger');
-        const navLinks = document.querySelector('.nav-links');
-
-        burger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        burger.classList.toggle('toggle');
-       });
-        
-      
         //building tools
         const clientId = '31f25c15fa8a4c4a845595ffbcb2d076';
         const clientSecret = 'b6d93473aaeb4079aadbd1973854ec9f';
