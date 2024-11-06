@@ -46,8 +46,8 @@
         
       
         //building tools
-        const clientId = 'b6d93473aaeb4079aadbd1973854ec9f';
-        const clientSecret = '31f25c15fa8a4c4a845595ffbcb2d076';
+        const clientId = '31f25c15fa8a4c4a845595ffbcb2d076';
+        const clientSecret = 'b6d93473aaeb4079aadbd1973854ec9f';
         let accessToken = '';
         let currentTrackIndex = 0;
         let playlistData = [];
