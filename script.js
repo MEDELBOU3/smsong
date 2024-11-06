@@ -46,8 +46,8 @@
         
       
         //building tools
-        const clientId = '31f25c15fa8a4c4a845595ffbcb2d076';
-        const clientSecret = 'b6d93473aaeb4079aadbd1973854ec9f';
+        const clientId = 'b6d93473aaeb4079aadbd1973854ec9f';
+        const clientSecret = '31f25c15fa8a4c4a845595ffbcb2d076';
         let accessToken = '';
         let currentTrackIndex = 0;
         let playlistData = [];
@@ -57,7 +57,7 @@
         let searchResultsData = [];
         let playlistOffset = 0;
         let currentAudio; // Initialize the Howler object
-        const playlistLimit = 10;
+        const playlistLimit = 15;
         
         async function getAccessToken() {
             const result = await fetch('https://accounts.spotify.com/api/token', {
