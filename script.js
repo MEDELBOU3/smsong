@@ -1,12 +1,9 @@
-   function scrollToTop() {
+       function scrollToTop() {
           window.scrollTo({
             top: 0,
             behavior: 'smooth' // لتنعيم التمرير
           });
         }
-      </script>
-
-    <script>
 
             function getQueryParams() {
                 const params = {};
